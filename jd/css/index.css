@@ -1,0 +1,293 @@
+.jd{
+    height: 480px;
+    /*background-color: pink;*/
+    position: relative;
+}
+.jd-inner{
+    height: 480px;
+    /*background-color: purple;*/
+    position: relative;/*方便设置层级*/
+    z-index: 1;/*大的在上边*/
+}
+.ad{
+    background: url("../images/bg.png") no-repeat top center;
+    height: 480px;
+    position: absolute;/*用定位做。只有绝对定位的盒子默认转换成行内块*/
+    top: 0;
+    left: 0;
+    width: 100%;/*行内块根据内容定义宽度，一定要写*/
+    z-index: 0;
+}
+.ad a{
+    display: block;
+    /*width: 100%;*/
+    height: 100%;
+}
+.jd-col1{
+    width: 190px;
+    height: 465px;
+    background-color: #6e6568;
+    padding-top: 10px;
+}
+.jd-col1 li{
+    padding-left: 10px;
+    line-height: 26px;
+    height: 26px;
+}
+.jd-col1 li a{
+    font-size: 14px;
+    color: #ffffff;
+}
+.jd-col1 li a:hover{
+    color: #e36e6c;
+}
+.jd-col1 li:hover{
+    background-color: #999395;
+}
+.jd-col1 li span{
+    font-size: 10px;/*变化不明显*/
+    color: #ffffff;
+}
+.jd-clo2{
+    width: 790px;
+    height: 480px;
+    /*background-color: pink;*/
+    margin: 0 10px;
+}
+/*轮播图*/
+.jd-clo2-hd{
+    height: 340px;
+    background-color: pink;
+    position: relative;
+}
+.arr-l,.arr-r{
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 30px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.2);
+    font-family: "icomoon";
+    color: #ffffff;
+    text-align: center;
+    line-height: 60px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+.arr-l:hover,.arr-r:hover{
+    background: rgba(0, 0, 0, 0.4);
+}
+.arr-l{
+    left: 0;
+}
+.arr-r{
+    right: 0;
+}
+.jd-clo2-hd ol{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -90px;
+    width: 180px;
+    height: 20px;
+    background:rgba(255,255,255,0.3);
+    border-radius: 10px;
+}
+.jd-clo2-hd .current{
+    background-color: #f10215;
+    cursor: pointer;
+}
+.jd-clo2-hd ol li{
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: white;
+    float: left;
+    margin: 4px 5px;
+}
+.jd-col2-bd div{
+    width: 390px;
+    height: 130px;/*为啥盒子是260px高*/
+    float: left;
+    padding-top: 10px;
+}
+.jd-col2-bd div img{
+    width: 100%;
+}
+.jd-col2-bd-l{
+    margin-right: 10px;
+}
+.jd-clo3{
+    width: 190px;
+    height: 480px;
+    /*background-color: yellow;*/
+}
+.jd-clo3 a{
+    font-size: 12px;
+    color: #747474;
+}
+.user{
+    height: 100px;
+    /*background-color: pink;*/
+    padding: 15px 15px 0;
+
+}
+.user-info{
+    height: 40px;
+    padding-left: 54px;
+    font-size:12px ;
+    color: #747474;
+    line-height: 22px;
+    position: relative;
+
+}
+.info-img{
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    /*padding: 5px;*/
+}
+.info-img img{
+    width: 100%;
+    height: auto;/*自动，跟随宽度缩放*/
+}
+.user-info a{
+    font-size:12px ;
+    color: #747474;
+}
+.user-info a:hover{
+    color: #f10215;
+}
+.user-profit{
+    margin-top: 14px;
+}
+.user-profit a{
+    width: 65px;
+    height: 20px;
+    border: 2px solid #f10215;
+    display: inline-block;/*原先都是各自成一行，转换成行内块并列*/
+    font-size: 12px;
+    color: #f10215;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 4px;
+
+}
+.user-profit a:hover{
+    color: #fff;
+    background-color: #f10215;
+}
+.news{
+    height: 149px;
+    /*background-color: yellow;*/
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    padding: 5px 15px 0;
+}
+.news a:hover{
+    color: #f10215;
+}
+.tab-hd{
+    border-bottom: 1px solid #ccc;
+    padding: 3px 0;
+    position: relative;
+}
+.tab-hd a{
+
+    margin: 0 4px;
+}
+.outlet{
+    border-right: 1px solid #cccccc;
+    padding-right: 10px;
+}
+.news .more{
+    position: absolute;
+    top: 3px;
+    right: 0;
+}
+.news .line{
+    width: 28px;
+    height: 2px;
+    color: #f10215;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+}
+.tab-bd li{
+    height: 23px;
+    line-height: 23px;
+
+}
+.tab-bd{
+    margin-top: 10px;
+}
+.jd-service{
+    height: 209px;
+    width: 190px;
+    overflow: hidden;
+    /*background-color: skyblue;*/
+}
+.jd-service ul{
+    width: 192px;
+}
+.jd-service li{
+    height: 69px;
+    width: 47px;
+    /*background-color: purple;*/
+    float: left;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.jd-service li a{
+    width: 100%;
+    height:100%;/*参照父元素*/
+    /*height: auto;参照自身情况调整*/
+    display: block;
+}
+.jd-service i{
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 15px auto 8px;
+    background: url("../images/sprite_fs@1x.png") no-repeat;
+}
+.jd-service p{
+    text-align: center;
+}
+.jd-service .baitiao{
+    background-position:  -44px 0;
+}
+.jd-service .youxi{
+    background-position: -88px 0;
+}
+.jd-service  .zhongchou{
+    background-position: -132px 0;
+}
+.jd-service .jipiao{
+    background-position: 0 -44px ;
+}
+.jd-service .dianyingpiao{
+    background-position: -44px -44px;
+}
+.jd-service  .qiyegou{
+    background-position: -88px -44px;
+}
+.jd-service  .licai{
+    background-position: -132px -44px;
+}
+.jd-service .huafei{
+    background-position: 0 -88px ;
+}
+.jd-service .jiudian{
+    background-position: -44px -88px;
+}
+.jd-service  .huocheepiao{
+    background-position: -88px -88px;
+}
+.jd-service  .lipinka{
+    background-position: -132px -88px;
+}

@@ -1,0 +1,120 @@
+/* 主页之为你推荐版块 */
+x.page-main .recommend input {
+  display: none;
+}
+.page-main .recommend .container {
+  position: relative;
+}
+.page-main .recommend-items {
+  width: 1226px;
+  height: 320px;
+  position: relative;
+  overflow: hidden;
+}
+.page-main .recommend ul {
+  width: 4960px; 
+  position:absolute;
+  transition: 1s;
+}
+.page-main .recommend li {
+  width: 234px;
+  height: 300px;
+  background-color: #fff;
+  padding-top: 40px;
+  margin:0 14px 14px 0;
+  float: left;
+}
+.page-main .recommend li  *{
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+.page-main .recommend li a {
+  color: #333333;
+  font-size: 14px;
+}
+.page-main .recommend li span {
+  margin-top: 16px;
+  color: #ff6700;
+  font-size: 14px;
+}
+.page-main .recommend input {
+  display: none;
+}
+.page-main .recommend input:nth-of-type(1):checked ~ .recommend-items ul {
+  left: calc(-248px * 0);
+}
+.page-main .recommend input:nth-of-type(2):checked ~ .recommend-items ul {
+  left: calc(-248px * 5);
+}
+.page-main .recommend input:nth-of-type(3):checked ~ .recommend-items ul {
+  left: calc(-248px * 10);
+}
+.page-main .recommend input:nth-of-type(4):checked ~ .recommend-items ul {
+  left: calc(-248px * 15);
+}
+.page-main .recommend input:nth-of-type(4):checked ~ .recommend-items ul {
+  left: calc(-248px * 15);
+}
+.page-main .recommend label {
+  text-align: center;
+  border: 1px solid #e0e0e0; 
+  cursor: pointer;
+
+}
+.page-main .recommend label:nth-of-type(odd) {
+  width: 38px;
+  position: absolute;
+  top: 24px;
+  right: 37px;
+}
+.page-main .recommend label:nth-of-type(even) {
+  width: 38px;
+  position: absolute;
+  top: 24px;
+  right: 0px;
+}
+.page-main .recommend label i{
+  line-height: 18px;
+  vertical-align: -1px;
+  color: #b0b0b0;
+  font-size: 22px;
+  font-weight: bold;
+}
+.page-main .recommend label:hover i {
+  color: #ff6700;
+}
+.page-main .recommend input:nth-of-type(1):checked ~label:nth-of-type(1)  {
+  z-index: 10;
+}
+.page-main .recommend input:nth-of-type(1):checked ~label:nth-of-type(2)  {
+  z-index: 10;
+}
+.page-main .recommend input:nth-of-type(2):checked ~label:nth-of-type(3)  {
+  z-index: 10;
+}
+.page-main .recommend input:nth-of-type(2):checked ~label:nth-of-type(4)  {
+  z-index: 10;
+}
+.page-main .recommend input:nth-of-type(3):checked ~label:nth-of-type(5)  {
+  z-index: 10;
+}
+.page-main .recommend input:nth-of-type(3):checked ~label:nth-of-type(6)  {
+  z-index: 10;
+}
+.page-main .recommend input:nth-of-type(4):checked ~label:nth-of-type(7)  {
+  z-index: 10;
+}
+.page-main .recommend input:nth-of-type(4):checked ~label:nth-of-type(8)  {
+  z-index: 10;
+}
+.page-main .recommend label.disable {
+  cursor: default;
+
+}
+.page-main .recommend label.disable i{
+  color: #e0e0e0;
+}
+.page-main .recommend label.diable:hover i {
+  color: #ff6700;
+}

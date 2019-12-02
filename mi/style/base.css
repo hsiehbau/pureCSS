@@ -1,0 +1,82 @@
+/* 引入字体 */
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/?#iefix') format('embedded-opentype'),
+      url('../font/iconfont.woff2') format('woff2'),
+      url('../font/iconfont.woff') format('woff'),
+      url('../font/iconfont.ttf') format('truetype'),
+      url('../font/iconfont.svg#iconfont') format('svg');
+}
+/* @font-face {
+  font-family: 'iconfont';  
+  src: url('//at.alicdn.com/t/font_1217976_560pks3x04.eot');
+  src: url('//at.alicdn.com/t/font_1217976_560pks3x04.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1217976_560pks3x04.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1217976_560pks3x04.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1217976_560pks3x04.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1217976_560pks3x04.svg#iconfont') format('svg');
+} */
+body {
+  margin: 0;
+  min-width: 1226px;
+  overflow-x: hidden;
+}
+html,body {
+  scroll-behavior:smooth;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  width: 1226px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.clearfix::before {
+  /* content: '';
+  display: table; */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+  color: #757575;
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.l {
+  outline: 1px solid red;
+}
+dl,dt,dd {
+  padding: 0;
+  margin: 0;
+}
+.hover-shadow-translate {
+  transition: .3s;
+}
+.hover-shadow-translate:hover {
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  transform: translate3d(0, -2px, 0);
+}

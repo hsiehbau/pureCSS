@@ -1,0 +1,86 @@
+/* 视频版块 */
+.page-main .video {
+  position: relative;
+ 
+}
+.page-main .video .viewall{
+  position: absolute;
+  right: 0;
+  top:20px;
+ 
+}
+.page-main .video .viewall i {
+  border-radius: 50%;
+  background-color:#ccc;
+  font-size: 18px;
+  vertical-align: top;
+  color: #fff;
+  font-weight:bold;
+  margin-left: 5px;
+  vertical-align: -1px;
+  transition: .3s;
+}
+.page-main .video .viewall a {
+  transition: .3s;
+}
+.page-main .video .viewall:hover a{
+  color: #ff6700;
+  
+}
+.page-main .video .viewall:hover i {
+  background-color: #ff6700;
+  color: #fff;
+}
+.page-main .video li {
+  float: left;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 60px;
+  margin-right: 14px;
+}
+.page-main .video li:last-child {
+  margin-right: 0;
+}
+.page-main .video li span {
+  line-height: 22px;
+  width: 38px;
+  border-radius: 19px;
+  border: 2px solid #fff;
+  position: absolute;
+  top:146px;
+  left: 20px;
+  color: #fff;
+  text-align: center;
+ 
+}
+.page-main .video li img {
+  vertical-align: top;
+}
+.page-main .video li img:hover ~ span {
+  background-color: #ff6700;
+  border-color: #ff6700;
+  transition: .3s;
+}
+.page-main .video li span:hover {
+  background-color: #ff6700;
+  border-color: #ff6700;
+   transition: .3s;
+}
+.page-main .video li div.h {
+  margin-top: 38px;
+  text-align: center;
+}
+.page-main .video li div.h a {
+  font-size: 14px;
+  color: black;
+}
+.page-main .video li div.h a:hover {
+  color: #ff6700;
+}
+.page-main .video li p {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 36px;
+  font-size:12px;
+  color: #ccc;
+}
